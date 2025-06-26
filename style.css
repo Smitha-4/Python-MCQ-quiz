@@ -1,0 +1,307 @@
+/* Dark Theme CSS */
+body {
+
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    margin: 20px;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+   padding:20px;
+   font-size: larger;
+}
+
+
+.container {
+    background-color: #070707;
+    /* Slightly lighter dark container */
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Darker shadow */
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+h1,
+h2 {
+    color: #87ceeb;
+    
+}
+
+.question-block {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #555555;
+    
+    border-radius: 5px;
+    background-color: #343434;
+    
+}
+
+.question-block p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #5567b4;
+    font-size: 30px;
+    
+}
+
+.options label {
+    display: block;
+    margin-bottom: 8px;
+    cursor: pointer;
+    color: #000000;
+
+}
+
+.options input[type="radio"] {
+    margin-right: 8px;
+    accent-color: #87ceeb;
+    /* Accent color for radio buttons */
+}
+
+.feedback {
+    margin-top: 10px;
+    font-size: 0.9em;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.feedback.correct {
+    color: #90ee90;
+    /* Light green for correct */
+    background-color: #283a28;
+    /* Darker green background */
+}
+
+.feedback.incorrect {
+    color: #ff6347;
+    /* Tomato red for incorrect */
+    background-color: #4a2d28;
+    /* Darker red background */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#score-section {
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px solid #87ceeb;
+    /* Blue border for score */
+    border-radius: 8px;
+    background-color: #3a4a5a;
+    /* Darker blueish background */
+    text-align: center;
+    font-size: 1.2em;
+    color: #e0e0e0;
+}
+
+pre code {
+    display: block;
+    background-color: #444;
+    /* Darker background for code */
+    color: #eee;
+    /* Lighter text for code */
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    /* Ensure code wraps */
+    border: 1px solid #666;
+}
+
+
+
+
+.hidden {
+    display: none;
+}
+
+/* Optional: Basic styling for instructions screen and output images */
+#instructions-screen {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#instructions-screen ul {
+    list-style-position: inside;
+    text-align: left;
+    margin: 15px auto;
+    max-width: 600px;
+}
+
+#instructions-screen li {
+    margin-bottom: 8px;
+}
+
+.question-output-image,
+.block-option-image {
+    max-width: 100%; /* Ensure images fit within their containers */
+    height: auto; /* Maintain aspect ratio */
+    border: 1px solid #000000;
+    border-radius: 4px;
+    margin: 10px 0;
+    display: block; /* Make them block-level elements for better layout */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block-option-image {
+    max-width: 80%; /* Slightly smaller for options */
+}
+
+/* Adjust question and options container for better spacing around images */
+#question {
+    margin-bottom: 15px;
+}
+#answer-options{
+    list-style: none;
+}
+#answer-options li {
+    margin-bottom: 15px; 
+}
+
+#answer-options label {
+    display: block; /* Make labels take full width for better click area */
+    padding: 10px;
+    border: 1px solid #2d2a2a;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ffffff;
+    transition: background-color 0.2s;
+}
+
+#answer-options label:hover {
+    background-color: #6ea2f0;
+}
+
+#answer-options input[type="radio"]:checked + label {
+    background-color: #ffffff; 
+    border-color: #28a745; 
+}
+
+/* style.css additions */
+
+/* General styling for question blocks in results view */
+.question-block {
+    background-color: #ffffff;
+    border: 1px solid #c1c1c1;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.result-question-block {
+    margin-top: 30px; /* More spacing between questions in results */
+}
+
+/* Styling for options in results view */
+.result-options p {
+    padding: 8px 12px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    font-weight: normal; /* Resetting bold from selection */
+    color: #333; /* Default text color */
+    background-color: #fcfcfc;
+}
+
+/* User selected option */
+.user-selected {
+    background-color: rgba(135, 206, 235, 0.3) !important; /* Light blue highlight */
+    border-color: #87ceeb !important;
+}
+
+/* Correct answer highlight */
+.correct-answer {
+    color: #28a745 !important; /* Dark green text */
+    font-weight: bold;
+    background-color: rgba(40, 167, 69, 0.1) !important; /* Light green background */
+    border-color: #28a745 !important;
+}
+
+/* User selected but incorrect */
+.user-incorrect {
+    color: #dc3545 !important; /* Red text */
+    font-weight: bold;
+    background-color: rgba(220, 53, 69, 0.1) !important; /* Light red background */
+    border-color: #dc3545 !important;
+}
+
+.correct-answer-text {
+    font-weight: bold;
+}
+
+/* Feedback messages */
+.feedback {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.feedback.correct {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.feedback.incorrect, .feedback.unanswered {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Code block styling */
+pre {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto; /* For long lines of code */
+    margin: 15px 0;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 0.9em;
+}
+
+code {
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+/* Score section styling */
+#score-section {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#score-section h3 {
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+#score-section p {
+    color: #6c757d;
+}

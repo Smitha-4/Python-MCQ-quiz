@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Python Quiz</h1>
+
+        <div id="instructions-screen">
+            <h2>Quiz Instructions</h2>
+            <p>Welcome to the Python Quiz! Read the instructions carefully before you begin:</p>
+            <ul>
+                <li>Answer each question to the best of your ability.</li>
+                <li>Select only one option for each question.</li>
+                <li>Some questions might include code snippets or block images.</li>
+                <li>Click "Next" to go to the next question.</li>
+                <li>Click "Submit" on the last question to see your score!</li>
+            </ul>
+            <button id="start-quiz-btn" class="btn">Start Quiz</button>
+        </div>
+
+        <div id="quiz-container" class="hidden">
+            </div>
+
+        <div id="result" class="result"></div>
+
+        <button id="next-btn" class="btn hidden">Next</button>
+        <button id="submit-btn" class="btn hidden">Submit</button> <button id="restart-btn" class="btn hidden">Restart Quiz</button>
+
+        </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
